@@ -9,7 +9,8 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #13101d;
+  background: linear-gradient(to right, #0c0a10, #181423);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +18,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Lato', sans-serif;
+  color: #f1f1f1;
 }
 
 .container {
@@ -30,7 +32,7 @@ h1 {
 }
 
 h3 {
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #2b2540;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
@@ -41,12 +43,13 @@ h4 {
 }
 
 .inc-exp-container {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
+  background-color: #1f1d27;
+  box-shadow: 0px 0px 20px -5px #1f1d28;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 5px;
 }
 
 .inc-exp-container > div {
@@ -55,7 +58,7 @@ h4 {
 }
 
 .inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
+  border-right: 1px solid #2b2540;
 }
 
 .money {
@@ -66,10 +69,12 @@ h4 {
 
 .money.plus {
   color: #2ecc71;
+  text-shadow: 0px 0px 20px;
 }
 
 .money.minus {
   color: #c0392b;
+  text-shadow: 0px 0px 20px;
 }
 
 label {
@@ -79,17 +84,19 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
+  border: 1px solid #33313a;
   border-radius: 2px;
   display: block;
   font-size: 16px;
   padding: 10px;
   width: 100%;
+  background-color: #1f1d28;
+  color: #dedede;
 }
 
 .btn {
   cursor: pointer;
-  background-color: #9c88ff;
+  background-color: #2f294c;
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -98,6 +105,7 @@ input[type='number'] {
   margin: 10px 0 30px;
   padding: 10px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .btn:focus,
@@ -112,14 +120,15 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: #1f1d28;
   box-shadow: var(--box-shadow);
-  color: #333;
+  color: #c3c3c3;
   display: flex;
   justify-content: space-between;
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  border-radius: 5px;
 }
 
 .list li.plus {
@@ -148,6 +157,7 @@ input[type='number'] {
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .list li:hover .delete-btn {
@@ -159,7 +169,7 @@ input[type='number'] {
   grid-template-columns: 8fr 1fr;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #2b2540;
   padding-bottom: 10px;
 }
 
