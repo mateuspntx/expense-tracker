@@ -43,6 +43,7 @@ const AddTransaction = () => {
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="Enter text..."
+              required
             />
           </div>
           <div className="form-control">
