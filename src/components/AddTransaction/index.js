@@ -1,8 +1,8 @@
-import { useState, useContext } from 'react';
-import { GlobalContext } from '../../context/GlobalState';
+import { useState } from 'react';
+import { useExpenseTracker } from '../../context/GlobalState';
 
 const AddTransaction = () => {
-  const { addTransaction } = useContext(GlobalContext);
+  const { addTransaction } = useExpenseTracker();
 
   const [showAddTransactionBox, setShowAddTransactionBox] = useState(false);
   const [text, setText] = useState('');

@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react';
+import { useContext, createContext, useReducer } from 'react';
 import AppReducer from './AppReducer';
 
 const initialState = {
@@ -36,3 +36,5 @@ export const GlobalProvider = ({ children }) => {
     </GlobalContext.Provider>
   );
 };
+
+export const useExpenseTracker = () => useContext(GlobalContext);

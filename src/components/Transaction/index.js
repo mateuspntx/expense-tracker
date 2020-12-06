@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/GlobalState';
+import { useExpenseTracker } from '../../context/GlobalState';
 
 const Transaction = ({ transaction }) => {
-  const { deleteTransaction } = useContext(GlobalContext);
+  const { deleteTransaction } = useExpenseTracker();
 
   const sign = transaction.amount < 0 ? '-' : '+';
 

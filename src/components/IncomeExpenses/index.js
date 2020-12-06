@@ -1,8 +1,7 @@
-import { useContext } from 'react';
-import { GlobalContext } from '../../context/GlobalState';
+import { useExpenseTracker } from '../../context/GlobalState';
 
 const IncomeExpenses = () => {
-  const { transactions } = useContext(GlobalContext);
+  const { transactions } = useExpenseTracker();
 
   const amounts = transactions.map((transaction) => transaction.amount);
 
