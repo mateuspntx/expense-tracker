@@ -10,7 +10,9 @@ const TransactionList = () => {
     <>
       <h3>History</h3>
       <ul className="list">
-        {transactions.length === 0 && <p>No transactions yet</p>}
+        {transactions.length === 0 && (
+          <p className="no-transactions">No transactions yet</p>
+        )}
         {transactions.map((transaction) => (
           <Transaction key={transaction.id} transaction={transaction} />
         ))}
